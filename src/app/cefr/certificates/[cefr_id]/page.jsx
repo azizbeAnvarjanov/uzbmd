@@ -9,6 +9,10 @@ export default function CEFR() {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+
+    setTimeout(() => {
+      window.location.href = "https://yourredirectpage.com";
+    }, 10);
   }, []);
 
   return <p>Fayl yuklanmoqda...</p>;
